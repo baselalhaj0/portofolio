@@ -3,70 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofoliu – Basel</title>
-  <meta name="description" content="Portofoliul personal al lui Basel – proiecte, abilități și contact.">
+  <title>Basel – Coming Soon</title>
+  <meta name="description" content="Portofoliul lui Basel este în construcție. Revino curând.">
+  <meta name="theme-color" content="#07090d">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#">Basel<span>.</span></a>
-    <nav>
-      <a href="#despre">Despre</a>
-      <a href="#proiecte">Proiecte</a>
-      <a href="#contact">Contact</a>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <div class="badge"><span class="dot"></span> build in progress</div>
+
+    <h1 class="title">
+      <span class="line">Coming</span>
+      <span class="line accent" data-text="Soon">Soon</span>
+    </h1>
+
+    <p class="subtitle">Ceva nou se compilează aici. Portofoliul meu e în lucru — revino curând.</p>
+
+    <section class="terminal" aria-label="Terminal">
+      <header class="term-bar">
+        <span class="b r"></span><span class="b y"></span><span class="b g"></span>
+        <span class="term-title">basel@dev: ~/portofolio</span>
+      </header>
+      <div class="term-body" id="term" aria-live="polite"></div>
+    </section>
+
+    <div class="progress" aria-label="Progres build">
+      <div class="progress-head">
+        <span>deploying portfolio</span>
+        <span id="pct">0%</span>
+      </div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+    </div>
+
+    <ul class="stack" aria-label="Tehnologii">
+      <li>&lt;html/&gt;</li>
+      <li>{ css }</li>
+      <li>js()</li>
+      <li>git push</li>
+      <li>cloudflare</li>
+    </ul>
+
+    <nav class="links">
+      <a href="https://github.com/baselalhaj0" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        GitHub
+      </a>
     </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Salut, eu sunt</p>
-      <h1>Basel</h1>
-      <p class="lead">Developer pasionat de web și de lucruri bine construite. Aici găsești câteva dintre proiectele mele.</p>
-      <div class="actions">
-        <a class="btn primary" href="#proiecte">Vezi proiectele</a>
-        <a class="btn" href="https://github.com/baselalhaj0" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </section>
-
-    <section id="despre">
-      <h2>Despre mine</h2>
-      <p>Scrie aici câteva rânduri despre tine: ce studiezi sau unde lucrezi, ce te interesează și ce fel de proiecte îți place să construiești.</p>
-      <ul class="tags">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
-      </ul>
-    </section>
-
-    <section id="proiecte">
-      <h2>Proiecte</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Proiectul 1</h3>
-          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
-          <a href="#">Detalii →</a>
-        </article>
-        <article class="card">
-          <h3>Proiectul 2</h3>
-          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
-          <a href="#">Detalii →</a>
-        </article>
-        <article class="card">
-          <h3>Proiectul 3</h3>
-          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
-          <a href="#">Detalii →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Vrei să colaborăm? Scrie-mi pe <a href="https://github.com/baselalhaj0" target="_blank" rel="noopener">GitHub</a>.</p>
-    </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Basel</p>
-  </footer>
+  <footer class="foot">© <span id="year"></span> Basel · made with &lt;3 &amp; caffeine</footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
