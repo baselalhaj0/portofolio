@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofoliu – Basel</title>
+  <meta name="description" content="Portofoliul personal al lui Basel – proiecte, abilități și contact.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">Basel<span>.</span></a>
+    <nav>
+      <a href="#despre">Despre</a>
+      <a href="#proiecte">Proiecte</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Salut, eu sunt</p>
+      <h1>Basel</h1>
+      <p class="lead">Developer pasionat de web și de lucruri bine construite. Aici găsești câteva dintre proiectele mele.</p>
+      <div class="actions">
+        <a class="btn primary" href="#proiecte">Vezi proiectele</a>
+        <a class="btn" href="https://github.com/baselalhaj0" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section id="despre">
+      <h2>Despre mine</h2>
+      <p>Scrie aici câteva rânduri despre tine: ce studiezi sau unde lucrezi, ce te interesează și ce fel de proiecte îți place să construiești.</p>
+      <ul class="tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
+      </ul>
+    </section>
+
+    <section id="proiecte">
+      <h2>Proiecte</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Proiectul 1</h3>
+          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
+          <a href="#">Detalii →</a>
+        </article>
+        <article class="card">
+          <h3>Proiectul 2</h3>
+          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
+          <a href="#">Detalii →</a>
+        </article>
+        <article class="card">
+          <h3>Proiectul 3</h3>
+          <p>O scurtă descriere a proiectului și a tehnologiilor folosite.</p>
+          <a href="#">Detalii →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Vrei să colaborăm? Scrie-mi pe <a href="https://github.com/baselalhaj0" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Basel</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
